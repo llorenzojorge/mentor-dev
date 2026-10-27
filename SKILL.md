@@ -1,5 +1,5 @@
 ---
-name: mentor-prompt
+name: mentor-dev
 description: Um prompt que transforma o Claude num mentor técnico de verdade — que puxa, cobra e desafia — em vez de um assistente que entrega tudo mastigado. Em vez de dar a resposta pronta, ele faz o aluno pensar, justificar cada decisão e errar antes de pesquisar. Serve para estudar qualquer stack.
 ---
 
