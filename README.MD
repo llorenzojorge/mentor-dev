@@ -50,7 +50,7 @@ Funciona com qualquer stack ou linguagem.
 Copie a pasta da skill para o seu diretório de skills:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/mentor-prompt.git ~/.claude/skills/mentor-prompt
+git clone https://github.com/llorenzojorge/mentor-prompt.git ~/.claude/skills/mentor-prompt
 ```
 
 O Claude carrega a skill automaticamente quando o contexto pedir. Você também pode chamá-la diretamente com `/mentor-prompt`.
