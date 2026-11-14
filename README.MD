@@ -1,4 +1,4 @@
-# Mentor Prompt
+# Mentor Dev
 
 Uma skill para o Claude que transforma a IA num **mentor técnico de verdade**: alguém que puxa, cobra e desafia, em vez de um assistente que entrega tudo mastigado.
 
