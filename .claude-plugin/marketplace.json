@@ -1,0 +1,14 @@
+{
+  "name": "llorenzojorge-skills",
+  "description": "Skills do Lorenzo Jorge para estudar e desenvolver com o Claude",
+  "owner": {
+    "name": "Lorenzo Jorge"
+  },
+  "plugins": [
+    {
+      "name": "mentor-dev",
+      "source": "./plugins/mentor-dev",
+      "description": "Transforma o Claude num mentor técnico que puxa, cobra e desafia, com modo estudo (diagnóstico, aula e simulado de entrevista)"
+    }
+  ]
+}
