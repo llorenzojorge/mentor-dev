@@ -69,29 +69,54 @@ Funciona com qualquer stack ou linguagem.
 
 ## Instalação
 
-### Claude Code
+### Claude Code (recomendado: como plugin, com atualizações)
 
-Copie a pasta da skill para o seu diretório de skills:
+Este repositório é um **marketplace de plugins** do Claude Code. Dentro de uma sessão do Claude Code (terminal ou VS Code), rode:
 
-```bash
-git clone https://github.com/llorenzojorge/mentor-dev.git ~/.claude/skills/mentor-dev
+```
+/plugin marketplace add llorenzojorge/mentor-dev
+/plugin install mentor-dev@llorenzojorge-skills
 ```
 
-O Claude carrega a skill automaticamente quando o contexto pedir. Você também pode chamá-la diretamente com `/mentor-dev`.
+O Claude carrega a skill automaticamente quando o contexto pedir. Para chamar diretamente: `/mentor-dev:mentor-dev`.
 
-Para usar a skill só em um projeto, copie o `SKILL.md` para `.claude/skills/mentor-dev/` dentro do projeto.
+Para usar só em um projeto e deixar registrado para quem abrir o projeto, rode no terminal, dentro da pasta do projeto, e faça commit do `.claude/settings.json` gerado:
+
+```bash
+claude plugin marketplace add llorenzojorge/mentor-dev --scope project
+```
+
+### Atualizações
+
+Por padrão, o Claude Code **não** atualiza marketplaces de terceiros sozinho. Você escolhe:
+
+- **Automático:** em `/plugin`, vá em **Marketplaces**, selecione `llorenzojorge-skills` e escolha **Enable auto-update**. Depois disso, as versões novas chegam sozinhas quando uma sessão começa.
+- **Manual:** rode `/plugin marketplace update llorenzojorge-skills` quando quiser a versão mais recente.
+
+O plugin não fixa número de versão: cada commit na `main` é uma versão nova.
 
 ### Claude.ai (app e web)
 
-1. Baixe este repositório como `.zip`.
+1. Baixe a pasta `plugins/mentor-dev/skills/mentor-dev` (ou o repositório inteiro) e compacte a pasta da skill como `.zip`.
 2. Em **Configurações → Personalização → Skills**, faça o upload do arquivo.
 3. Ative a skill e comece uma conversa sobre o que você quer estudar.
+
+No claude.ai a skill não se atualiza sozinha: para pegar uma versão nova, faça o upload de novo.
 
 ## Estrutura
 
 ```
 mentor-dev/
-├── SKILL.md    # As instruções do mentor (inclui o modo estudo)
+├── .claude-plugin/
+│   └── marketplace.json          # Catálogo do marketplace (lista os plugins)
+├── plugins/
+│   └── mentor-dev/
+│       ├── .claude-plugin/
+│       │   └── plugin.json       # Manifesto do plugin
+│       └── skills/
+│           └── mentor-dev/
+│               └── SKILL.md      # As instruções do mentor (inclui o modo estudo)
+├── LICENSE
 └── README.md
 ```
 

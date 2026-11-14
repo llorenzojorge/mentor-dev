@@ -1,0 +1,9 @@
+{
+  "name": "mentor-dev",
+  "description": "Transforma o Claude num mentor técnico que puxa, cobra e desafia, com modo estudo (diagnóstico, aula e simulado de entrevista)",
+  "author": {
+    "name": "Lorenzo Jorge"
+  },
+  "repository": "https://github.com/llorenzojorge/mentor-dev",
+  "license": "MIT"
+}
