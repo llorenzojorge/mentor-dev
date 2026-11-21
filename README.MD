@@ -2,7 +2,7 @@
 
 Um plugin para o Claude Code (que também funciona como skill no claude.ai) que transforma a IA num **mentor técnico de verdade**: alguém que puxa, cobra e desafia, em vez de um assistente que entrega tudo mastigado.
 
-Feita para quem quer **aprender a desenvolver projetos com IA** ou **estudar para entrevistas técnicas** (estrutura de dados, algoritmos, system design), não para quem quer que a IA faça o trabalho por ele.
+Feito para quem quer **aprender a desenvolver projetos com IA** ou **estudar para entrevistas técnicas** (estrutura de dados, algoritmos, system design), não para quem quer que a IA faça o trabalho por ele.
 
 ## O problema
 
