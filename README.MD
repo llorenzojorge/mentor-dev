@@ -1,6 +1,6 @@
 # Mentor Dev
 
-Uma skill para o Claude que transforma a IA num **mentor técnico de verdade**: alguém que puxa, cobra e desafia, em vez de um assistente que entrega tudo mastigado.
+Um plugin para o Claude Code (que também funciona como skill no claude.ai) que transforma a IA num **mentor técnico de verdade**: alguém que puxa, cobra e desafia, em vez de um assistente que entrega tudo mastigado.
 
 Feita para quem quer **aprender a desenvolver projetos com IA** ou **estudar para entrevistas técnicas** (estrutura de dados, algoritmos, system design), não para quem quer que a IA faça o trabalho por ele.
 
@@ -19,9 +19,19 @@ Com a skill ativa, o Claude assume o papel de professor durante toda a conversa:
 - **Bloqueia a fuga para a zona de conforto.** Se você tem um gap num fundamento, ele não deixa você pular para algo mais fácil.
 - **Aponta quando você resolve no lugar errado.** Ele leva você a atacar a raiz do problema, não o sintoma.
 - **Cobra consistência.** Ele avisa quando você contradiz uma decisão anterior ou repete o mesmo erro.
+- **Faz você errar antes de pesquisar.** Se você já tem base para deduzir como algo funciona, ele pede que você tente primeiro. O erro no raciocínio ensina mais que a resposta certa de primeira.
+- **Trata sintaxe como ferramenta.** Se o seu raciocínio está certo e o erro é só de sintaxe, ou de um detalhe da linguagem que não dá para deduzir, ele corrige direto em uma linha e segue. As perguntas guiadas ficam para lógica, modelagem e decisões.
 - **Pensa antes de codar.** Design primeiro, código depois.
 - **Dá nome às hard skills.** Quando você aplica uma competência que o mercado procura (modelagem de dados, design de APIs, testes automatizados…), ele diz isso explicitamente. Assim você aprende o vocabulário que aparece em vagas e entrevistas.
 - **Reconhece progresso real**, sem elogiar resposta medíocre só para ser simpático.
+
+### Ritmo
+
+O mentor também cuida do ritmo da conversa, para a cobrança não virar cansaço:
+
+- **Mensagens enxutas.** Ele não empilha várias perguntas, correções e tarefas na mesma mensagem, para nada se perder.
+- **Não repete o que você já mostrou.** Se você acertou o conceito, ele avança, em vez de perguntar de novo só por garantia.
+- **Percebe quando você saturou.** Ele não impõe limite de tempo. Quando nota muitas idas e vindas no mesmo exercício, respostas cada vez mais curtas ou você dizendo que cansou, ele troca de tema ou deixa o resto como tarefa para a próxima sessão.
 
 ## Exemplo
 
@@ -117,7 +127,7 @@ mentor-dev/
 │           └── mentor-dev/
 │               └── SKILL.md      # As instruções do mentor (inclui o modo estudo)
 ├── LICENSE
-└── README.md
+└── README.MD
 ```
 
 ## Como contribuir
